@@ -1,59 +1,3 @@
-*,
-*:after,
-*:before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  box-sizing: border-box;
-  padding: 30px; }
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  /*top of the image stays the same, it crop out the from bottom*/
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-  .header .logo-box {
-    position: absolute;
-    top: 40px;
-    left: 40px; }
-    .header .logo-box .logo {
-      height: 35px; }
-  .header .text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /*shift 50% of width and height from top and left*/
-    text-align: center; }
-    .header .text-box .heading-primary {
-      color: #fff;
-      text-transform: uppercase;
-      backface-visibility: hidden;
-      margin-bottom: 60px; }
-      .header .text-box .heading-primary-main {
-        display: block;
-        font-size: 60px;
-        font-weight: 400;
-        letter-spacing: 35px;
-        animation-name: moveInLeft;
-        animation-duration: 1s;
-        animation-timing-function: ease-out; }
-      .header .text-box .heading-primary-sub {
-        display: block;
-        font-size: 20px;
-        font-weight: 700;
-        letter-spacing: 17.4px;
-        animation: moveInRight 1s ease-out; }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -81,6 +25,43 @@ body {
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  padding: 30px; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 60px; }
+  .heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  .heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+    animation: moveInRight 1s ease-out; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -123,6 +104,28 @@ body {
 .btn-animated {
   animation: moveInBottom .5s ease-out .3s;
   animation-fill-mode: backwards; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  /*top of the image stays the same, it crop out the from bottom*/
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  .header .logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px; }
+    .header .logo-box .logo {
+      height: 35px; }
+  .header .text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*shift 50% of width and height from top and left*/
+    text-align: center; }
 
 /*
  * Remove text-shadow in selection highlight:
