@@ -3,3 +3,7 @@
 # Useful .gitignore templates: https://github.com/github/gitignore
 
 ./doc
+.DS_Store
+.editorconfig
+../.idea
+node_modules
