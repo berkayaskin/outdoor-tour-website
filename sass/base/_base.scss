@@ -31,4 +31,8 @@ body {
   @include respond(tab-port) {
     padding: 0;
   }
+
+  ::-moz-selection { background: $color-primary; }
+  ::selection { background: $color-primary; }
 }
+
